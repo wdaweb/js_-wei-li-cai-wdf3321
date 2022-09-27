@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const random =((min,max)=>{
+  return Math.ceil(Math.random()*(max-min))
+})
+
+let arr1 = []
+
+
+for (i=1;i<=6;i++){
+  const rando = random(1,38)
+  
+  if (arr1.includes(rando)){
+    i--
+  }else{
+  arr1.push(rando)
+}
+  }
+
+
+  // while(arr1.length < 6){
+  //   const rand = random(1,38)
+  //   if (!arr.1.includes(rand)){
+  //     arr1.push(rand)
+  //   }
+  // }
+
+  // const numbers=[]
+  // for (let i = 1; i<=38;i++){
+  //   numbers.push(i)
+  // }
+  // for (let i =0; i<6;i++){
+  //   const index =random(0,numbers.length-1)
+  //   arr1.push(numbers[index])
+  //   numbers.splice(index)
+  // }
+  
+  
+document.write(`a區為${arr1}`+`<br>`)
+
+document.write(`B區為${random(1, 8)}`);
+  </script>
+</body>
+</html>
